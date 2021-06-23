@@ -3,17 +3,21 @@ package com.ufuoma.todoapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import java.net.PasswordAuthentication
 
-val validusername = "admin"
-val validpassword = "ädmin"
-private lateinit var usernameinput: EditText
-private lateinit var passwordinput: EditText
-private lateinit var submitbutton: EditText
+
 
 class MainActivity : AppCompatActivity() {
+
+    val validusername = "admin"
+    val validpassword = "ädmin"
+    private lateinit var usernameinput: EditText
+    private lateinit var passwordinput: EditText
+    private lateinit var submitbutton: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
